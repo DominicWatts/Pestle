@@ -1,4 +1,4 @@
-FROM php:7.0-cli
+FROM php:7.3-cli
 MAINTAINER Dominic Xigen <dominic@xigen.co.uk>
 
 RUN php --version
