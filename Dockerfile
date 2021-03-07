@@ -18,8 +18,10 @@ WORKDIR /code
 RUN mkdir -p /tmp/pestle_cache \
   && chmod 777 /tmp -R
 
-ARG USER_ID=dominic
-ARG GROUP_ID=dominic
+ARG USER_ID
+ENV USER_ID $USER_ID
+ARG GROUP_ID
+ENV GROUP_ID $GROUP_ID
 
 RUN addgroup --gid $GROUP_ID user
 RUN adduser --disabled-password --gecos '' --uid $USER_ID --gid $GROUP_ID user
