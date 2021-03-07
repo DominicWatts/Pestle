@@ -14,6 +14,8 @@
 
     docker push domw/pestle:7.1
 
+    [deprecated] docker build -t domw/pestle:latest --build-arg USER_ID=$(id -u) --build-arg GROUP_ID=$(id -g) ./
+
 ## Usage
     
     docker pull domw/pestle
