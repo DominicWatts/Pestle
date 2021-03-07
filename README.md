@@ -33,6 +33,10 @@ Note: in my case both vars were 1000
     docker pull domw/pestle
     
     docker run --rm -v $PWD:/code domw/pestle:latest
+
+## Alias
+
+    alias pestle='docker run --rm -v $PWD:/code domw/pestle'
     
 ## Useage example
 
