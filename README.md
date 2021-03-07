@@ -2,6 +2,18 @@
 
 [Docker_Hub](https://hub.docker.com/r/domw/pestle)
 
+## Dockerhub Autobuild Env Variables
+
+USER_ID
+
+GROUP_ID
+
+Note: in my case both vars were 1000
+
+    id -g
+
+    id -u
+
 ## Compilation
 
     docker login
